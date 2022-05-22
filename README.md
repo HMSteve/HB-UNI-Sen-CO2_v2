@@ -10,16 +10,20 @@ Auf Grund der jedoch deutlich hoeheren Spitzenstromaufnahme des SCD41 ist ein an
 
 ## Platine
 
-Auf der Platine sind drei I2C-Steckplaetze fuer Sensoren vorgesehen. Neben dem [Sensirion SCD30](https://sensirion.com/products/catalog/SCD30/) bzw. [SCD41](https://sensirion.com/products/catalog/SCD41/) bietet sich ein [4-poliges BME280-Modul](https://www.ebay.de/itm/BME280-Temperatur-Luftdruck-Feuchtigkeit-Sensor-I2C-1-8-5V-Modul/114603492524) zur Luftdruck-Kompensation an. Der Drucksensor ist auch in der Firmware vorgesehen. Der dritte Steckplatz ist aktuell frei.
+Auf der Platine sind drei I2C-Steckplaetze fuer Sensoren vorgesehen. Neben dem [Sensirion SCD30](https://sensirion.com/products/catalog/SCD30/) bzw. [SCD41](https://sensirion.com/products/catalog/SCD41/) bietet sich ein 4-poliges BME280- oder BMP280-Modul zur Luftdruck-Kompensation an. Der Drucksensor ist auch in der Firmware vorgesehen. Der dritte Steckplatz ist aktuell frei.
 Als Display findet ein [1.54" Waveshare-E-Paper-Modul](https://www.waveshare.com/1.54inch-e-Paper-Module.htm) Verwendung.
 
-[Schaltplan](https://github.com/HMSteve/HB-UNI-Sen-CO2_v2/blob/main/PCB/HB-Uni-Sen-CO2_Schematic.pdf)
+[Schaltplan](https://github.com/HMSteve/HB-UNI-Sen-CO2_v2/blob/main/PCB/HB-Uni-Sen-CO2_v2_Schematic.pdf)
 
 Zum Schutz vor dem Auftreten einer Reset-Schleife in Foge der hohen Einschaltstromspitze der Peripherie des Controllers (CC1101 und SCD41) muss der zum Schalten genutzte MOSFET etwas "gebremst" werden. Das fiel leider erst nach Herstellung der Platine auf, kann aber leicht gemaess
 
+![Schaltplan v2.1](https://github.com/HMSteve/HB-UNI-Sen-CO2_v2/blob/main/PCB/HB-Uni-Sen-CO2_v2p1_Schematic.pdf)
+
+oder
+
 ![diesem Foto](https://github.com/HMSteve/HB-UNI-Sen-CO2_v2/blob/main/Images/pcb_bott_corr.jpg)
 
-mittels 10nF-Kondensator (1), 100k-Widerstand (29 und Lackdrahtbruecke (3) korrigiert werden.
+mittels 10nF-Kondensator C19 (1), 100k-Widerstand R29 (2) und Lackdrahtbruecke (3) korrigiert werden.
 
 
 
