@@ -10,7 +10,7 @@ Auf Grund der jedoch deutlich hoeheren Spitzenstromaufnahme des SCD41 ist ein an
 
 ## Platine
 
-Auf der Platine sind drei I2C-Steckplaetze fuer Sensoren vorgesehen. Neben dem [Sensirion SCD30](https://sensirion.com/products/catalog/SCD30/) bzw. [SCD41](https://sensirion.com/products/catalog/SCD41/) bietet sich ein 4-poliges BME280- oder BMP280-Modul zur Luftdruck-Kompensation an. Der Drucksensor ist auch in der Firmware vorgesehen. Der dritte Steckplatz ist aktuell frei.
+Auf der Platine sind drei I2C-Steckplaetze fuer Sensoren vorgesehen. Neben dem [Sensirion SCD30](https://sensirion.com/products/catalog/SCD30/) bzw. [SCD41](https://sensirion.com/products/catalog/SCD41/) bietet sich ein moeglichst 4-poliges, notfalls auch 6-poliges BME280- oder BMP280-Modul zur Luftdruck-Kompensation an. Der Drucksensor ist auch in der Firmware vorgesehen. Der dritte Steckplatz ist aktuell frei.
 Als Display findet ein [1.54" Waveshare-E-Paper-Modul](https://www.waveshare.com/1.54inch-e-Paper-Module.htm) Verwendung.
 
 [Schaltplan](https://github.com/HMSteve/HB-UNI-Sen-CO2_v2/blob/main/PCB/HB-Uni-Sen-CO2_v2_Schematic.pdf)
@@ -25,6 +25,9 @@ oder
 
 mittels 10nF-Kondensator C19 (1), 100k-Widerstand R29 (2) und Lackdrahtbruecke (3) korrigiert werden.
 
+Fuer den SCD41 ist das entsprechende [Breakout-Board](SCD41_Breakout_v1_TopPlace.pdf) zu nutzen. Dessen Loetung ist nur per reflow, jedoch ohne Probleme mit Heissluft oder Buegeleisen von unten moeglich. Eine Schablone zur Pastenauftrag bietet sich jedoch an.
+
+![PCB mit Breakout](https://github.com/HMSteve/HB-UNI-Sen-CO2_v2/blob/main/Images/pcb_incl_breakout.jpg)
 
 
 ## Software
