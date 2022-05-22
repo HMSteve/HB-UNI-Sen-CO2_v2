@@ -3,7 +3,7 @@
 ![HB-UNI-Sen-CO2](https://github.com/HMSteve/HB-UNI-Sen-CO2/blob/main/Images/dev_front.jpg)
 
 Eine Erweiterung meines AskSinPP-basierten [Innenraum-CO2-Sensor](https://github.com/HMSteve/HB-UNI-Sen-CO2).
-Die neue Version kann neben dem Sensirion SCD30 nun auch den Sensirion SCD41 nutzen. Vortiel ist eine deulich verlaengerte Betriebszeit mit einer Akkuladung von mind. einem Monat.
+Die neue Version kann neben dem Sensirion SCD30 nun auch den Sensirion SCD41 nutzen. Vorteil ist eine deulich verlaengerte Betriebszeit mit einer Akkuladung von mind. einem Monat.
 
 Auf Grund der jedoch deutlich hoeheren Spitzenstromaufnahme des SCD41 ist ein anderer Step-Up-Wandler (MCP1640) und damit eine neue Platine notwendig. Gehaeuse, CCU-Addon-Version und Bedienung sind gegenueber der Ursprungsversion unveraendert. Damit gelten die entsprechenden Informationen in der Dokumentation zu dieser Version weiterhin.
 
@@ -15,7 +15,8 @@ Als Display findet ein [1.54" Waveshare-E-Paper-Modul](https://www.waveshare.com
 
 [Schaltplan](https://github.com/HMSteve/HB-UNI-Sen-CO2_v2/blob/main/PCB/HB-Uni-Sen-CO2_Schematic.pdf)
 
-Zum Schutz vor dem Auftreten einer Reset-Schleife in Foge der hohen Einschaltstromspitze der Peripherie des Controllers (CC1101 und SCD41) muss der zum Schalten genutzte MOSFET etwas "gebremst" werden. Das fiel leider erst nach Herstellung der Platine auf, kann aber leicht gemaess ![diesem Foto](https://github.com/HMSteve/HB-UNI-Sen-CO2_v2/blob/main/Images/pcb_bott_corr.jpg) mittels 10nF-Kondensator (1), 100k-Widerstand (29 und Lackdrahtbruecke (3) korrigiert werden.
+Zum Schutz vor dem Auftreten einer Reset-Schleife in Foge der hohen Einschaltstromspitze der Peripherie des Controllers (CC1101 und SCD41) muss der zum Schalten genutzte MOSFET etwas "gebremst" werden. Das fiel leider erst nach Herstellung der Platine auf, kann aber leicht gemaess ![diesem Foto](https://github.com/HMSteve/HB-UNI-Sen-CO2_v2/blob/main/Images/pcb_bott_corr.jpg)
+mittels 10nF-Kondensator (1), 100k-Widerstand (29 und Lackdrahtbruecke (3) korrigiert werden.
 
 
 
