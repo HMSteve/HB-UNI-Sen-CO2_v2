@@ -15,7 +15,7 @@ Als Display findet ein [1.54" Waveshare-E-Paper-Modul](https://www.waveshare.com
 
 [Schaltplan](https://github.com/HMSteve/HB-UNI-Sen-CO2_v2/blob/main/PCB/HB-Uni-Sen-CO2_v2_Schematic.pdf)
 
-Zum Schutz vor dem Auftreten einer Reset-Schleife in Foge der hohen Einschaltstromspitze der Peripherie des Controllers (CC1101 und SCD41) muss der zum Schalten genutzte MOSFET etwas "gebremst" werden. Das fiel leider erst nach Herstellung der Platine auf, kann aber leicht gemaess
+Zum Schutz vor dem Auftreten einer Reset-Schleife in Foge der hohen Einschaltstromspitze der Peripherie des Controllers (CC1101 und SCD41) muss der zum Schalten genutzte MOSFET etwas "gebremst" werden. Das fiel leider erst nach Herstellung der Platine v2 auf, kann aber leicht gemaess
 
 ![Schaltplan v2.1](https://github.com/HMSteve/HB-UNI-Sen-CO2_v2/blob/main/PCB/HB-Uni-Sen-CO2_v2p1_Schematic.pdf)
 
