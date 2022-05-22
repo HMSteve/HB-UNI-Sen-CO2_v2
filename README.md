@@ -19,7 +19,7 @@ Zum Schutz vor dem Auftreten einer Reset-Schleife in Foge der hohen Einschaltstr
 
 ![Schaltplan v2.1](https://github.com/HMSteve/HB-UNI-Sen-CO2_v2/blob/main/PCB/HB-Uni-Sen-CO2_v2p1_Schematic.pdf)
 
-oder
+oder an Hand des Fotos
 
 ![diesem Foto](https://github.com/HMSteve/HB-UNI-Sen-CO2_v2/blob/main/Images/pcb_bott_corr.jpg)
 
